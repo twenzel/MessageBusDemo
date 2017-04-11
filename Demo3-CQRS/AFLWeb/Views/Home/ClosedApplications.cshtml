@@ -1,0 +1,28 @@
+﻿@model AFLWeb.Models.ClosedApplicationsModel
+@{
+    ViewData["Title"] = "Closed Applications";
+}
+<h2>@ViewData["Title"]</h2>
+
+
+<table class="table table-hover clickable" id="myTable">
+    <thead>
+        <tr>
+            <th>Requester</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Accepted on</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var app in Model.Applications)
+        {
+            <tr class="clickable-row" data-application-id="@app.ApplicationId">
+                <td>@app.Requester</td>
+                <td>@app.From</td>
+                <td>@app.To</td>
+                <td>@app.AcceptedOn</td>
+            </tr>
+        }
+    </tbody>
+</table>

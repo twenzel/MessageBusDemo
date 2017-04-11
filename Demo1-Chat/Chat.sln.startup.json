@@ -1,0 +1,52 @@
+/*
+    This is a configuration file for the SwitchStartupProject Visual Studio Extension
+    See https://bitbucket.org/thirteen/switchstartupproject/src/tip/Configuration.md
+*/
+{
+    /*  Configuration File Version  */
+    "Version": 3,
+    
+    /*  Create an item in the dropdown list for each project in the solution?  */
+    "ListAllProjects": true,
+
+    /*
+        Dictionary of named configurations with one or multiple startup projects
+        and optional parameters like command line arguments and working directory.
+        Example:
+
+        "MultiProjectConfigurations": {
+            "A + B (CLA + workDir)": {
+                "Projects": {
+                    "MyProjectA": {},
+                    "MyProjectB": {
+                        "CommandLineArguments": "1234"
+                        "WorkingDirectory": "%USERPROFILE%\test"
+                    }
+                }
+            },
+            "A + B": {
+                "Projects": {
+                    "MyProjectA": {},
+                    "MyProjectB": {
+                        "CommandLineArguments": ""
+                        "WorkingDirectory": ""
+                    }
+                }
+            },
+            "D": {
+                "Projects": {
+                    "MyProjectD": {}
+                }
+            }
+        },
+    */
+  "MultiProjectConfigurations": {
+    "Client 1+2  + Server": {
+      "Projects": {
+        "Chat.Client": {},
+        "Chat.Client2": {},
+        "Chat.Server": {}
+      }
+    }
+  }
+}

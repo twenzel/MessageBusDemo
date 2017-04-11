@@ -1,0 +1,45 @@
+﻿@model AFLWeb.Models.OpenApplicationsModel
+@{
+    ViewData["Title"] = "Open Applications";
+}
+<h2>@ViewData["Title"]</h2>
+
+
+<table class="table table-hover clickable" id="myTable">
+    <thead>
+        <tr>
+            <th>Requester</th>
+            <th>From</th>
+            <th>To</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var app in Model.Applications)
+        {
+            <tr class="clickable-row" data-application-id="@app.ApplicationId">
+                <td>@app.Requester</td>
+                <td>@app.From</td>
+                <td>@app.To</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button class="btn btn-default" id="acceptBtn" onclick="acceptApplication()" disabled>Accept application</button>
+
+@section scripts {
+<script language="javascript">
+    $('table.clickable').on('click', '.clickable-row', function (event) {        
+          $('#acceptBtn').prop('disabled', false);
+    });
+
+    function acceptApplication()
+    {
+        var id = $('#myTable tr.info').data("applicationId");
+
+        $.post('@Url.Action("AcceptApplication")', { applicationId: id }, function (data) { 
+            window.location.href = '@Url.Action("OpenApplications")';
+        });
+    }
+</script>
+}
