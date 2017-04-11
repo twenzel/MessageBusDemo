@@ -10,6 +10,7 @@ The ui queries these read models in order to show the open and accepted applciat
 
 This example uses the [MassTransit](http://masstransit-project.com/) library on top of [RabbitMQ](https://www.rabbitmq.com/) transportation.
 
+The data of the domain service and query service are stored in an embedded RavenDb database. The RavenDb Studio is accessable using http://localhost:50011 (query service) and http://localhost:50022 (domain service).
 
 #### Initial data
 Please call the http://localhost:5002/api/Applications/test url to create initial data.
