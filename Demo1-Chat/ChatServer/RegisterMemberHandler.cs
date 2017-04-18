@@ -12,9 +12,7 @@ namespace Chat.Server
     {
         public void ProcessMessage(IHandlerContext<RegisterMemberCommand> context)
         {
-            Console.WriteLine();
             Console.WriteLine($"[MEMBER REGISTERED] : user name = '{context.Message.Nickname}'");
-            Console.WriteLine();
 
             context.Send(new MemberRegisteredEvent
             {

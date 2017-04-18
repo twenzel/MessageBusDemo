@@ -12,9 +12,7 @@ namespace Chat.Server
     {
         public void ProcessMessage(IHandlerContext<SendMessageCommand> context)
         {
-            Console.WriteLine();
             Console.WriteLine($"[Message SENT] : {context.Message.From}->'{context.Message.Message}'");
-            Console.WriteLine();
 
             context.Publish(new MessageReceivedEvent
             {

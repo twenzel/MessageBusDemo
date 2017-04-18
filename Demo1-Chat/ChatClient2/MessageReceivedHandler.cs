@@ -12,9 +12,7 @@ namespace OtherNamespace
     {
         public void ProcessMessage(IHandlerContext<MessageReceivedEvent> context)
         {
-            Console.WriteLine();
             Console.WriteLine($"[{context.Message.From}] : {context.Message.Message}");
-            Console.WriteLine();
         }
     }
 }
