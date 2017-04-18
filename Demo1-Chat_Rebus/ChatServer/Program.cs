@@ -14,7 +14,7 @@ namespace Chat.Server
                 container.AutoRegisterHandlersFromThisAssembly();
 
                 Configure.With(new CastleWindsorContainerAdapter(container))
-                    .Logging(l => l.ColoredConsole(Rebus.Logging.LogLevel.Info))
+                    .Logging(l => l.ColoredConsole(Rebus.Logging.LogLevel.Warn))
                     .Transport(t => t.UseMsmq("chat-server"))
                     .Start();
 

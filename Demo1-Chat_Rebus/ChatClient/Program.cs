@@ -21,7 +21,7 @@ namespace Chat.Client
                 activator.Register(() => new MessageReceivedHandler());
 
                 var bus = Configure.With(activator)
-                    .Logging(l => l.ColoredConsole(Rebus.Logging.LogLevel.Info))
+                    .Logging(l => l.ColoredConsole(Rebus.Logging.LogLevel.Warn))
                     .Transport(t => t.UseMsmq("chat-client"))
                     .Routing(r => r.TypeBased().MapAssemblyOf<RegisterMemberCommand>("chat-server"))
                     .Start();
