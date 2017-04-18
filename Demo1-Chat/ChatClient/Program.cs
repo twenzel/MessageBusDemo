@@ -16,7 +16,7 @@ namespace Chat.Client
         static void Main(string[] args)
         {
             var subscriptionManager = SubscriptionManager.Default();
-            //subscriptionManager.Subscribe<MessageReceivedEvent>();
+            subscriptionManager.Subscribe<MessageReceivedEvent>();
 
             using (var bus = ServiceBus.Create(c => {
                 c.MessageHandlerFactory(new CastleMessageHandlerFactory(new WindsorContainer()));
