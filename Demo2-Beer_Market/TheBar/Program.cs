@@ -17,6 +17,9 @@ namespace TheBar
     {
         static void Main(string[] args)
         {
+            // change output encoding for correct currency sign display
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
             using (var container = new WindsorContainer())
             {
                 container.AutoRegisterHandlersFromThisAssembly();
