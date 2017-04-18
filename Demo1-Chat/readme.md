@@ -9,6 +9,13 @@ Client sends message (command) to the server. Server broadcasts (event) the mess
 This example uses the [Shuttle.esb](https://github.com/Shuttle/shuttle-esb) library on top of MSMQ transportation.
 So there's nearly no prerequisite to run this sample except MSMQ.
 
+#### How to start the example
+
+* Open the solution
+* Compile all projects
+* Chat.Server: Set `Shuttle.Core.Host.exe` as the Start external program option by navigating to the bin\debug folder of the server project.
+	* It may be necessary to build the solution before the Shuttle.Core.Host.exe executable will be available in the bin\debug folder.
+
 #### MSMQ Setup
 https://msdn.microsoft.com/en-us/library/aa967729(v=vs.110).aspx
 
