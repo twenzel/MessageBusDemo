@@ -22,10 +22,5 @@ namespace Chat.Server
                 From = context.Message.From
             });
         }
-
-        //public bool IsReusable
-        //{
-        //    get { return true; }
-        //}
     }
 }

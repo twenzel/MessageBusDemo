@@ -21,10 +21,5 @@ namespace Chat.Server
                 NickName = context.Message.Nickname
             }, c => c.Reply());
         }
-
-        //public bool IsReusable
-        //{
-        //    get { return true; }
-        //}
     }
 }

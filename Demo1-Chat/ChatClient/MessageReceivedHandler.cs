@@ -16,10 +16,5 @@ namespace Chat.Client
             Console.WriteLine($"[{context.Message.From}] : {context.Message.Message}");
             Console.WriteLine();
         }
-
-        //public bool IsReusable
-        //{
-        //    get { return true; }
-        //}
     }
 }

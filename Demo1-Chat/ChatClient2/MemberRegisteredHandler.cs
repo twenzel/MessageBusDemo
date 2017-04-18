@@ -15,10 +15,5 @@ namespace Chat.Client2
             Console.WriteLine();
             Console.WriteLine($"[User was registered] : nickname = '{context.Message.NickName}'");            
         }
-
-        //public bool IsReusable
-        //{
-        //    get { return true; }
-        //}
     }
 }
