@@ -16,3 +16,9 @@ In difference to the previous [demo](../Demo2-Beer_Market) this version uses a [
 
 #### MSMQ Setup
 https://msdn.microsoft.com/en-us/library/aa967729(v=vs.110).aspx
+
+__Short version__:
+* Start Windows Feature Wizard:
+  * Start -> Type "Feature", Choose "Turn Windows Features On or Off"
+  * or Control Panel -> Programs -> "Turn Windows Features On or Off"
+* Enable `Microsoft Message Queue (MSMQ) Server Core`. All other MSMQ sub-options should be disabled.
