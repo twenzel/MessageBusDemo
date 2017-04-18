@@ -18,7 +18,7 @@ namespace OrderService
                 container.AutoRegisterHandlersFromThisAssembly();
 
                 Configure.With(new CastleWindsorContainerAdapter(container))
-                    .Logging(l => l.ColoredConsole(Rebus.Logging.LogLevel.Info))
+                    .Logging(l => l.ColoredConsole(Rebus.Logging.LogLevel.Warn))
                     .Transport(t => t.UseRabbitMq("amqp://guest:guest@172.17.0.2", "order_input"))
                     .Start();
 
