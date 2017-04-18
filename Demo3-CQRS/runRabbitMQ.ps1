@@ -1,0 +1,1 @@
+docker run -d --hostname my-rabbit --name rabbitmq -P rabbitmq:3.6.9-management
