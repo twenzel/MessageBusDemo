@@ -40,6 +40,20 @@ namespace AFLDomain.Controllers
                 To = DateTime.Today.AddDays(30)
             });
 
+            _service.CreateApplicationRequest(new ApplicationForLeave()
+            {
+                Requester = "Peter Cushing",
+                From = DateTime.Today.AddDays(120),
+                To = DateTime.Today.AddDays(129)
+            });
+
+            _service.CreateApplicationRequest(new ApplicationForLeave()
+            {
+                Requester = "Alec Guinness",
+                From = DateTime.Today.AddDays(125),
+                To = DateTime.Today.AddDays(133)
+            });
+
             return Ok();
         }
     }
