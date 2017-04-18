@@ -12,7 +12,6 @@ namespace OtherNamespace
     {
         public Task Handle(MessageReceivedEvent message)
         {
-            Console.WriteLine();
             Console.WriteLine($"[{message.From}] : {message.Message}");
 
             return Task.FromResult<int>(0);
