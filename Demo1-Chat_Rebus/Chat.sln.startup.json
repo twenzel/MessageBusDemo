@@ -7,7 +7,7 @@
     "Version": 3,
     
     /*  Create an item in the dropdown list for each project in the solution?  */
-    "ListAllProjects": true,
+    "ListAllProjects": false,
 
     /*
         Dictionary of named configurations with one or multiple startup projects
@@ -41,7 +41,7 @@
         },
     */
   "MultiProjectConfigurations": {
-    "Client 1+2  + Server": {
+    "Clients + Server": {
       "Projects": {
         "Chat.Client": {},
         "Chat.Client2": {},
