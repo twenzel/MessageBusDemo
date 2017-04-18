@@ -1,16 +1,5 @@
-﻿using Beer.Messages;
-using Castle.MicroKernel.Registration;
+﻿using System;
 using Castle.Windsor;
-using Rebus.Auditing.Messages;
-using Rebus.CastleWindsor;
-using Rebus.Config;
-using Rebus.Routing.TypeBased;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Configuration;
 using TheBar.Installers;
 
 namespace TheBar
@@ -18,7 +7,10 @@ namespace TheBar
     class Program
     {
         static void Main(string[] args)
-        {            
+        {
+            // change output encoding for correct currency sign display
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
             using (var container = new WindsorContainer())
             {                                                             
                 container
