@@ -17,6 +17,7 @@ Demos
 * [Demo 2 - Beer market with Saga](/Demo2-Beer_Market_Saga) - Beer trading using a process manager ("Saga")
 * [Demo 3 - CQRS](/Demo3-CQRS) - Sample CQRS architecture using MassTransit and RabbitMQ
 * [Demo 4 - Scalability](/Demo4-Scalability) - Demo showing the scalability options using a message bus
+* [Demo 4 - Scalability (NServicebus)](/Demo4-Scalability_Nservicebus) - Demo showing the scalability options using a message bus (with NServiceBus)
 
 I recommend using the [SwitchStartupProject](https://marketplace.visualstudio.com/items?itemName=vs-publisher-141975.SwitchStartupProjectforVS2017) extension to easily start multiple projects. Configuration file is also available for each demo.
 
