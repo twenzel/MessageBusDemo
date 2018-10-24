@@ -16,9 +16,9 @@
     <PackageReference Include="MassTransit.CastleWindsor" Version="3.5.7" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="3.5.7" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
     <PackageReference Include="RavenDB.Embedded" Version="3.5.3" />
     <PackageReference Include="RavenDB.Server" Version="3.5.3" />
   </ItemGroup>
